@@ -45,7 +45,9 @@ function Gallery({search}) {
               <Photos photos={photos}/>
               <Typography>{page}</Typography>
               <Button onClick={() => changePageHandler("next")}>صفحه بعد</Button>
-              <Button onClick={() => changePageHandler("back")}>صفحه قبل</Button>
+              { page !== 1 &&
+                <Button onClick={() => changePageHandler("back")}>صفحه قبل</Button>
+              }
             </>
         ) : (
           <Typography>

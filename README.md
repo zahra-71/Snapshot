@@ -21,7 +21,7 @@ Click clone/download the repository on your local machine.
 
 ### `npm start`
 
-## Built With
+## Built With`
 
 * React js
 * React Router
@@ -34,3 +34,4 @@ Click clone/download the repository on your local machine.
 1. Responsive Design
 2. Search photoes
 3. The ability to go the next and previous page
+4. Ability to download images
