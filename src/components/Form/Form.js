@@ -7,7 +7,7 @@ import Navigation from './components/Navigation';
 
 function Form({ handleSubmit }) {
 
-  console.log("form")
+  // console.log("form")
 
   return (
     <div style={{marginBottom: "10px"}}>

@@ -23,7 +23,7 @@ import Items from './components/items/Items';
     var url = `/search/${searchInput}`
     navigate(url)
     SetSearch(searchInput)
-  }, [])
+  }, [navigate])
 
   return (
     <div className="App">

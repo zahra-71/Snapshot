@@ -17,7 +17,7 @@ const MyButton = styled(Button) (({ theme }) => ({
 function Navigation() {
   
   const navigate = useNavigate();
-  console.log("navigation")
+  // console.log("navigation")
 
   return (
     <Box pt={1}>

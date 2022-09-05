@@ -9,25 +9,21 @@ const MyPaper = styled(Paper) (({ theme }) => ({
   backgroundSize: "cover",
   width: "100%",
   height: 200,
-  padding: 10,
-  textAlign: "center",
   justifyContent: "center",
+  display: "flex"
 }))
 
 const MyTypography = styled(Typography) (({ theme }) => ({
-  margin: 10,
-  "& .MuiTypography-root": {
-    marginTop: 5
-  }
+  margin: "auto",
 }))
 
 function Header() {
 
-  console.log("header")
+  // console.log("header")
   
   return (
     <MyPaper>
-     <MyTypography variant="h2" color="#393F2C">
+     <MyTypography variant="h4" color="#393F2C">
        عکس‌های فوری
      </MyTypography>
     </MyPaper>

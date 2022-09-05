@@ -23,7 +23,7 @@ const MyTextField = styled(TextField) (({ theme }) => ({
 
 function Search({ clickHandler }) {
 
-  console.log("search")
+  // console.log("search")
   const [searchInput, SetSearchInput] = useState("");
 
   const changeHandler = (e) => {
@@ -38,7 +38,9 @@ function Search({ clickHandler }) {
         onChange={changeHandler}
         InputProps={{
           endAdornment: (
-            <IconButton onClick={ (e) => clickHandler(searchInput)}>
+            <IconButton onClick={ (e) => {clickHandler(searchInput)
+              SetSearchInput("")}
+            }>
               <InputAdornment position="start">
               <SearchIcon sx={{color: "#86BBD2", "&: hover": {
                 color: "#4C94CB"

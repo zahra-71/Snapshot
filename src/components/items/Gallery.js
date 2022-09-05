@@ -15,10 +15,16 @@ function Gallery({search}) {
   const prevSearchTermRef = usePrevious(search);
   // console.log("prevSearchTermRef", prevSearchTermRef)
 
-  const changePageHandler = () => {
-    console.log(page)
-    page += 1
-    runSearch(page)
+  const changePageHandler = (state) => {
+    // console.log(page)
+    // console.log(search)
+    if (state === "next"){
+      page += 1
+      runSearch(search,page)
+    } if ( state === "back"){
+      page -= 1
+      runSearch(search,page)
+    }
   }
   
   useEffect(() => {
@@ -27,7 +33,7 @@ function Gallery({search}) {
       runSearch(search, page)
     }
     runSearch(search, page)
-  }, [search, page])
+  }, [search])
 
   return (
     <div>
@@ -38,7 +44,8 @@ function Gallery({search}) {
             <>
               <Photos photos={photos}/>
               <Typography>{page}</Typography>
-              <Button onClick={changePageHandler}>بعدی</Button>
+              <Button onClick={() => changePageHandler("next")}>صفحه بعد</Button>
+              <Button onClick={() => changePageHandler("back")}>صفحه قبل</Button>
             </>
         ) : (
           <Typography>
