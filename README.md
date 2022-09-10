@@ -13,7 +13,7 @@ The purpose of this project was to get familiar with Context API.
 
 Click clone/download the repository on your local machine.
 
-### **install dependencies**
+### **Install dependencies**
 
 ### `npm install`
 
@@ -28,6 +28,7 @@ Click clone/download the repository on your local machine.
 * React Hooks
 * Context API
 * Unsplash API
+* Material UI
 
 ## Features
 

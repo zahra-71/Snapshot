@@ -1,5 +1,8 @@
 import { useNavigate, Routes, Route, Navigate} from 'react-router-dom';
 import { useCallback, useState } from 'react';
+import { ThemeProvider } from '@mui/material';
+
+// styles
 import './App.css';
 
 // components
@@ -8,6 +11,7 @@ import Form from './components/Form/Form';
 import PhotoContextProvider from './context/PhotoContext';
 import NotFound from './components/items/NotFound';
 import Items from './components/items/Items';
+
 
  function App() {
   const navigate = useNavigate()
